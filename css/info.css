@@ -1,0 +1,177 @@
+* {
+  background-color: rgba(18, 24, 29, 1);
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Noto Serif TC", serif;
+  /* font-family: "Roboto", sans-serif; */
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Typography */
+h1 {
+  display: block;
+  color: #ffff;
+  font-size: 3rem;
+  margin: 4px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+@media (max-width: 675px) {
+  h1 {
+    flex-direction: column;
+    font-size: 1.75rem;
+  }
+}
+
+/* Navbar */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+header {
+  background: floralwhite;
+  padding: 2rem 0;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  header {
+    text-align: center;
+  }
+}
+
+/* navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25rem 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+.current-page {
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+@media (max-width: 675px) {
+  nav li {
+    padding-bottom: 15px;
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 675px) {
+  nav ul {
+    flex: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 675px) {
+  .site-title {
+    opacity: 0%;
+  }
+}
+
+#headerTitle {
+  font-size: 1.5rem;
+}
+
+/* Heading */
+.one-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.heady1 {
+  border-bottom: 1px solid tomato;
+  font-size: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+@media (max-width: 675px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+  }
+}
+
+.img-area {
+  width: 100%;
+  padding: 0 20px;
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.single-img {
+  padding: 15px 15px;
+}
+
+img {
+  height: 550px;
+  width: 550px;
+}
+
+@media (max-width: 675px) {
+  img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+img:hover,
+img:focus {
+  opacity: 0.5;
+  transition: 0.9s;
+}
